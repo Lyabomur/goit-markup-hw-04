@@ -9,6 +9,7 @@
     --bgc-white: #ffffff;
     --bgc-button: #2196F3;
     --bgc-button-hero: #188CE8;
+    --svg-icon-color:#AFB1B8;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
 /* футер бк #2F303A; */
 /* колір bgc кнопки в герою #2196F3 */
 /* ховер акцент кнопки в герою #188CE8; */
+/* колір свг іконок #AFB1B8; */
 
 .container {
     margin: 0 auto;
@@ -497,15 +499,50 @@ body {
     }
 
 .clients-list{
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
 
     }
 
+.clients-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(100% / 6 - 30px);
+        
+}
 
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link{
+    display: flex;
+    padding: 15px 31px;
+    border: 1px solid var(--svg-icon-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    }
+
+.clients-link:hover,
+.clients-link:focus{
+    fill: var(--acent-color);
+    border-radius: 4px;
+    border: 1px solid var(--acent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--acent-color);
+}
+
+.clients-icon{
+    fill: var(--svg-icon-color);
+}
 
 /* Футер */
 
