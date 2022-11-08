@@ -170,10 +170,10 @@ body {
 
 /* унікальний контент */
 
-.hero {
-    background: var(--bgc-footer);
+.hero {    
     background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-color: var(--bgc-footer);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
@@ -181,8 +181,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
-    
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -237,6 +235,16 @@ body {
 .benefits-item:not(:last-child) {
     margin-right: 30px;
 }
+
+.benefits-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--fon-button);
+    margin-bottom: 30px;
+}
+
 
 .benefits-title {
 
@@ -470,7 +478,25 @@ body {
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+
 }
+
+
+/* Постійні клієнти */
+
+.client-title{
+     margin-top: 0;
+    margin-bottom: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+        }
+
+
 
 /* Футер */
 
