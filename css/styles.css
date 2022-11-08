@@ -484,7 +484,7 @@ body {
 
 /* Постійні клієнти */
 
-.client-title{
+.clients-title{
      margin-top: 0;
     margin-bottom: 50px;
     font-family: inherit;
@@ -494,7 +494,16 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
-        }
+    }
+
+.clients-list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        list-style: none;
+
+    }
 
 
 
