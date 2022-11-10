@@ -86,6 +86,9 @@ body {
 
 /* Навігація по сайту */
 
+.link-tel{
+    display: flex;
+}
 .link {
     color: var(--main-color);
     text-decoration: none;
@@ -424,7 +427,8 @@ body {
      
 }
 
-.social-link:hover{
+.social-link:hover,
+.social-link:focus{
     background-color: var(--acent-color);
     color: #ffffff;
 }
@@ -721,6 +725,7 @@ margin: 0;
      
 }
 
+.footer-link:focus,
 .footer-link:hover{
     background-color: var(--acent-color);
     
